@@ -5,10 +5,13 @@ A simple landing page with grid-like design system
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
 
 ### Screenshot
+![image](https://user-images.githubusercontent.com/50958126/199427086-56882e0f-d4ef-4746-a838-143ae975c0bf.png)
+![image](https://user-images.githubusercontent.com/50958126/199427212-39c3803e-469d-4a37-94be-eb1b94f89650.png)
+![image](https://user-images.githubusercontent.com/50958126/199427326-7adf5a77-b3bd-47fc-9109-304467500989.png)
 
 ### Links
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/LiyanNguyen/news-homepage
+- Live Site URL: https://liyannguyen.github.io/news-homepage
 
 ### My Process
 - Design the Mobile viewport WHILE desinging the Desktop Viewport at the same time using
