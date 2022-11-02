@@ -1,2 +1,38 @@
-# news-homepage
- A simple landing page with grid-like design system
+# News Homepage
+A simple landing page with grid-like design system
+
+### Frontend Mentor - News homepage
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
+
+### Screenshot
+
+### Links
+- Solution URL: 
+- Live Site URL: 
+
+### My Process
+- Design the Mobile viewport WHILE desinging the Desktop Viewport at the same time using
+- Design the flex/grid system, making sure to have both Desktop and Mobile Viewport layout correct
+- Add in all the other HTML content
+- Finished up all the CSS designs
+
+### Built with
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Grid
+- Mobile-first workflow
+
+### What I Learned
+- CSS filter Property
+- More Flexbox
+- Mobile-first workflow seems to be better approach
+- More JavaScript
+- In this scenario its better to look at the desktop design first than the mobile design and then plan acoordingly
+
+## Author
+- Website - [Liyan Anajao](https://liyannguyen.github.io/Portfolio)
+- Frontend Mentor - [@LiyanNguyen](https://frontendmentor.io/profile/LiyanNguyen)
+- Twitter - [@LiyanAnajao](https://twitter.com/LiyanAnajao)
+
+### Acknowledgments

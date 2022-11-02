@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+	/* PRIMARY  COLORS */
+	--softOrange: hsl(35, 77%, 62%);
+	--softRed: hsl(5, 85%, 63%);
+
+	/* NEUTRAL COLORS */
+	--ow: hsl(36, 100%, 99%);
+	--gb: hsl(233, 8%, 79%);
+	--dgb: hsl(236, 13%, 42%);
+	--vdb: hsl(240, 100%, 5%);
+
+	font-size: 15px;
+	font-family: 'Inter', sans-serif;
+	/* Weights: 400, 700, 800 */
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* MOBILE */
+body {
+	padding: 0 1rem;
+}
+
+nav {
+	padding: 2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav ul {
+	display: none;
+}
+
+.top {
+	padding: 1rem 0;
+	gap: 4rem;
+	display: flex;
+	flex-direction: column;
+}
+
+#sect1 {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#sect1  img {
+	display: block;
+	width: 100%;
+}
+
+#sect1 .textContent {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#sect1 .textContent h1 {
+	font-size: 3rem;
+	font-weight: 800;
+}
+
+#sect1 .textContent span {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+#sect1 .textContent span p {
+	color: var(--dgb);
+}
+
+#sect1 .textContent span button {
+	width: max-content;
+	padding: 1rem 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	background-color: var(--softRed);
+	color: var(--ow);
+	border: none;
+	cursor: pointer;
+	transition: 0.15s;
+}
+
+#sect1 .textContent span button:hover {
+	color: var(--ow);
+	background-color: var(--vdb);
+}
+
+#sect2 {
+	padding: 2rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	background-color: var(--vdb);
+	color: var(--ow);
+}
+
+#sect2 h2 {
+	color: var(--softOrange);
+	font-size: 2.5rem;
+}
+
+#sect2 article {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#sect2 article h3 {
+	font-size: 1.25rem;
+	color: var(--ow);
+	transition: 0.15s;
+	cursor: pointer;
+}
+
+#sect2 article h3:hover {
+	color: var(--softOrange);
+}
+
+#sect2 article p {
+	color: var(--gb);
+	line-height: 1.6;
+}
+
+
+#sect2 .line {
+	height: .05rem;
+	background-color: var(--dgb);
+}
+
+#sect3 {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+#sect3 article {
+	display: flex;
+	gap: 2rem;
+}
+
+#sect3 article img {
+	display: block;
+	width: 127px;
+}
+
+#sect3 article .textContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#sect3 article .textContent h3:first-child {
+	color: var(--gb);
+	font-size: 2.5rem;
+}
+
+#sect3 article .textContent h3:nth-child(2) {
+	color: var(--vdb);
+	font-size: 1.25rem;
+	font-weight: 800;
+	cursor: pointer;
+	transition: 0.15s;
+}
+
+#sect3 article .textContent h3:nth-child(2):hover {
+	color: var(--softRed);
+}
+
+#sect3 article .textContent p {
+	color: var(--dgb);
+}
+
+.blackLayer.active {
+	width: calc(100vw + 1rem);
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	left: -1rem;
+	z-index: 1;
+	top: 0;
+}
+
+
+.mobileSideBar {
+	height: 100vh;
+	width: 17.5rem;
+	background-color: var(--ow);
+	position: fixed;
+	right: -17.5rem;
+	z-index: 2;
+	top: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0 2rem;
+	gap: 2rem;
+	transition: 0.25s ease;
+}
+
+.mobileSideBar.active {
+	right: 0;
+}
+
+.mobileSideBar img {
+	display: block;
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+}
+
+.mobileSideBar li {
+	color: var(--vdb);
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1366px) {
+	body {
+		padding: 0 10rem;
+	}
+
+	#mobileMenu {
+		display: none;
+	}
+
+	nav ul {
+		display: flex;
+		gap: 2rem;
+		list-style: none;
+	}
+
+	nav ul li {
+		color: var(--dgb);
+		cursor: pointer;
+		transition: 0.15s;
+	}
+
+	nav ul li:hover {
+		color: var(--softOrange);
+	}
+
+	.top {
+		gap: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	#sect1 {
+		max-width: 800px;
+		min-width: 800px;
+	}
+
+	#sect1 .textContent {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#sect1 .textContent h1 {
+		font-size: 3.5rem;
+		max-width: 300px;
+	}
+
+	#sect1 .textContent span {
+		justify-content: space-between;
+	}
+
+	#sect1 .textContent span p {
+		line-height: 1.6;
+	}
+
+	#sect2 {
+		gap: 0;
+		justify-content: space-between;
+	}
+
+	#sect3 {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.blackLayer,
+	.mobileSideBar {
+		display: none;
+	}
+}
